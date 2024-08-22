@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "pages/api/auth/[...nextauth].js",
+      "use": "@vercel/next",
+      "config": {
+        "distDir": "public",
+        "output": "export",
+        "experimental": {
+          "appDir": true
+        },
+        "meta": {
+          "projectId": "<PROJECT_ID>"
+        }
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      }
+    }
+  ]
+}
