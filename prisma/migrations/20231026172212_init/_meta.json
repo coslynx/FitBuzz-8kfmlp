@@ -1,0 +1,8 @@
+{
+  "hash": "8848440440a72362a39224a9b44e8528e3d25413593c6967ac8d4f3f565747f9",
+  "prisma": {
+    "clientVersion": "4.13.0",
+    "engineVersion": "4.13.0"
+  },
+  "datamodel": "db/schema.prisma"
+}
